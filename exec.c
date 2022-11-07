@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * execute - execute the commands
+ * execute - execute the command
  * @parse: is a char array of pointers
  * Return: Always 0.
  */
