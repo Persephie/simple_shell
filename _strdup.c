@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strdup - duplicate a string
+ *_strdup - duplicates a string
  *@str: is a pointer
  *Return: pointer to array
  */

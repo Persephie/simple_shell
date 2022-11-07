@@ -3,8 +3,8 @@
 /**
  * _realloc - reallocate memory
  * @ptr: void variable pointer
- * @old_size: integer
- * @new_size: integer
+ * @old_size: an integer
+ * @new_size: an integer
  * Return: Null
  */
 

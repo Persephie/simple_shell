@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * find_path - function that finds the path
+ * find_path - a function that finds the path
  * @environ: global variable environment
  * Return: path in tokens
  */

@@ -2,7 +2,7 @@
 
 /**
  *_strlen - returns the length of a string
- *@s: is a character
+ *@s: a character
  * Return: 0;
  */
 
