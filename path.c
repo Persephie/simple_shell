@@ -1,17 +1,27 @@
-#include "main.h"
+#include "shell.h"
 
 /**
- * find_path - a function that finds the path
- * @environ: global variable environment
- * Return: path in tokens
- */
-
-char **find_path(char **environ)
+* find_path - finds the path from the global enviroment
+* Return: NULL if path is not found or path if path is found.
+*/
+char *find_path(void)
 {
-	char *get_path, **tokens, *delim;
+	int x;
+	char **env = environ, *path = NULL;
 
-	delim = ":";
-	get_path = _getenv(environ, "PATH");
-	tokens = splits(get_path, delim);
-	return (tokens);
+	while (*env)
+	{
+		if (_strncmp(*env, "PATH=", 5) == 0)
+		{
+			path = *env;
+			while (*path && x < 5)
+			{
+				path++;
+				x++;
+			}
+			return (path);
+		}
+		env++;
+	}
+	return (NULL);
 }
